@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Présentation des Layouts CSS">
+    <title>Introduction aux Layouts CSS</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <h1>CSS Layouts (Tableau/Position/Flex/Grid)</h1>
+        <p>Explorez différentes méthodes de mise en page en CSS, leurs concepts, avantages et limitations.</p>
+    </header>
+
+    <main>
+        <section class="planing">
+            <span>
+                La planification de la veille.
+            </span>
+            <div>
+                <a href="#section1">
+                    <h3>1- Introduction aux layouts CSS</h3>
+                </a>
+                <h3>2- Présentation du modèle "Tableau"</h3>
+                <h4>-Utilisation et limitations</h4>
+                <h3>3- La propriété "Position" en CSS</h3>
+                <h4>-Absolute, relative, fixed, sticky</h4>
+                <h3>4- Introduction à Flexbox</h3>
+            </div>
+            <div>
+                <h4>-Concepts et exemples pratiques</h4>
+                <h4>-Cas d’utilisation de Flexbox</h4>
+                <h3>5- Introduction à CSS Grid</h3>
+                <h4>-Concepts et exemples pratiques</h4>
+                <h4>-Différences entre Flexbox et Grid</h4>
+                <h3>6- Meilleures pratiques pour les layouts réactifs.</h3>
+            </div>
+        </section>
+        <section class="introduction" id="section1">
+            <div>
+                <h1>Introduction aux Layouts CSS</h1>
+                <p>Dans la conception de sites web, la mise en page joue un rôle essentiel dans
+                    l'organisation du contenu pour une expérience utilisateur fluide et intuitive. Le CSS (Cascading
+                    Style
+                    Sheets) offre plusieurs outils et modèles pour créer des layouts efficaces. Cette présentation
+                    abordera
+                    les différentes méthodes de mise en page en CSS, leurs concepts, leurs avantages, ainsi que leurs
+                    limitations.</p>
+            </div>
+            <div class="picCon">
+                <img src="pic-removebg-preview.png" alt="">
+            </div>
+        </section>
+        <section class="table-layout">
+            <div class="picCon">
+                <img src="X.jpg" alt="">
+            </div>
+            <div>
+                <h2>1. Présentation du Modèle "Tableau"</h2>
+                <p>
+                    Historiquement, avant l'introduction de modèles plus modernes, le modèle de mise en page "tableau"
+                    était
+                    largement utilisé. Il permettait de structurer une page web en utilisant des éléments HTML
+                    <code>&lt;table&gt;</code>, organisant ainsi le contenu en lignes et colonnes.
+                </p>
+                <h3>Limitations du modèle "Tableau"</h3>
+                <ul>
+                    <li><strong>Rigidité :</strong> Peu flexible, difficile à adapter pour des mises en page complexes.
+                    </li>
+                    <li><strong>Maintenance difficile :</strong> Ajout ou suppression d'éléments fastidieux.</li>
+                    <li><strong>Pas de séparation contenu/présentation :</strong> Le contenu est imbriqué dans la
+                        structure
+                        de la table.</li>
+                    <li><strong>Non réactif :</strong> Ne s'adapte pas bien aux écrans modernes.</li>
+                </ul>
+            </div>
+        </section>
+
+        <section class="css-position">
+
+            <div>
+                <h2>2. La propriété "Position" en CSS</h2>
+                <p>Le positionnement des éléments peut être défini en CSS avec les types suivants :</p>
+                <ul>
+                    <li><strong>static :</strong> Position par défaut.</li>
+                    <li><strong>relative :</strong> Décale un élément par rapport à sa position normale.</li>
+                    <li><strong>absolute :</strong> Place un élément en fonction de son ancêtre positionné.</li>
+                    <li><strong>fixed :</strong> Position par rapport à la fenêtre de l’utilisateur.</li>
+                    <li><strong>sticky :</strong> Combinaison de relative et fixed.</li>
+                </ul>
+                <p>Exemples pratiques : <code>absolute</code> pour des popups, <code>sticky</code> pour des barres de
+                    navigation fixes.</p>
+            </div>
+            <div class="picCon">
+                <img src="CSS Position — TutorialBrain.jpg" alt="">
+            </div>
+        </section>
+
+        <section class="flexbox">
+            <div class="picCon">
+                <img src="CSS FLEXBOX JUSTIFY CONTENT.jpg" alt="">
+            </div>
+            <div>
+                <h2>3. Introduction à Flexbox</h2>
+                <p>Flexbox est un modèle unidimensionnel (en ligne ou en colonne) qui permet une distribution flexible
+                    de
+                    l'espace.</p>
+                <ul>
+                    <li><strong>display: flex :</strong> Active le mode Flexbox.</li>
+                    <li><strong>justify-content :</strong> Aligne les éléments horizontalement.</li>
+                    <li><strong>align-items :</strong> Aligne les éléments verticalement.</li>
+                    <li><strong>flex-wrap :</strong> Permet d’enrouler les éléments sur plusieurs lignes si nécessaire.
+                    </li>
+                </ul>
+                <p>Cas d'utilisation : galeries d’images réactives, barres de navigation, formulaires, etc.</p>
+            </div>
+        </section>
+
+        <section class="grid-layout">
+            <div>
+                <h2>4. Introduction à CSS Grid</h2>
+                <p>CSS Grid est un modèle bidimensionnel qui permet de gérer des lignes et des colonnes simultanément,
+                    offrant plus de contrôle pour des mises en page complexes.</p>
+                <ul>
+                    <li><strong>display: grid :</strong> Active le mode Grid.</li>
+                    <li><strong>grid-template-columns</strong> et <strong>grid-template-rows :</strong> Définit le
+                        nombre et
+                        la taille des colonnes et des lignes.</li>
+                    <li><strong>grid-gap :</strong> Espace entre les lignes et colonnes.</li>
+                </ul>
+                <p>Différences entre Flexbox et Grid : Flexbox gère un axe à la fois, tandis que CSS Grid gère les deux.
+                </p>
+            </div>
+            <div class="picCon">
+                <img src="Alamin on X.jpg" alt="">
+            </div>
+        </section>
+
+        <section class="Pratiques-layout">
+            <h2>5. Meilleures Pratiques pour les Layouts Réactifs</h2>
+            <ul>
+                <li><strong>Media Queries :</strong> Utiliser <code>@media</code> pour adapter la mise en page selon la
+                    taille de l’écran.</li>
+                <li><strong>Responsive Units :</strong> Utiliser des unités relatives comme <code>em</code>,
+                    <code>rem</code>, <code>vw</code>, et <code>vh</code>.
+                </li>
+            </ul>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 - Présentation sur les Layouts CSS</p>
+    </footer>
+</body>
+
+</html>
